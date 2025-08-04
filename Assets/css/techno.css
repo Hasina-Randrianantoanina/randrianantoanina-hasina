@@ -1,0 +1,60 @@
+@import "./style.css";
+
+/* TECHNO */
+.caroussel {
+  position: relative;
+  width: min(710px, 100%);
+  padding: 0 25px;
+  margin: 3rem auto;
+  overflow: hidden;
+}
+
+.caroussel__inner {
+  position: relative;
+  display: flex;
+  width: 200%;
+  animation: infiniteLoop 25s linear infinite;
+}
+
+.item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.item img {
+  width: 65px;
+  filter: grayscale(1);
+}
+
+@keyframes infiniteLoop {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.left__caroussel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(270deg, transparent, #fff);
+  z-index: 10;
+}
+
+.right__caroussel {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(270deg, #fff, transparent);
+  z-index: 10;
+}

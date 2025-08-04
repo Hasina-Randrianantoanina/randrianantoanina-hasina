@@ -1,0 +1,112 @@
+@import "./style.css";
+
+/* NOS SERVICES */
+
+.nosService {
+  position: relative;
+  text-align: center;
+  max-width: 1200px;
+  width: 100vw;
+  margin: 0 auto;
+}
+
+.absoluteH1 {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 65vh;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.serviceH1 {
+  color: #d6e6f247;
+  font-size: 40vw !important;
+  z-index: -2;
+  animation: leftRight 85s linear infinite;
+}
+
+.nosService>h1,
+.nosProjets h1,
+.teamSection h1 {
+  padding-top: 25px;
+  color: #2778b9;
+  font-size: 35px;
+}
+
+.nosService>p,
+.nosProjets>p,
+.teamSection p {
+  width: 75%;
+  margin: 25px auto 0;
+}
+
+.allServices {
+  display: flex;
+  width: 85%;
+  margin: 75px auto 25px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 15px;
+  width: 85%;
+  margin: 75px auto 25px;
+}
+
+.services {
+  text-align: left;
+  width: clamp(15.3125rem, 12.7312rem + 12.9063vw, 23.75rem);
+  padding: 25px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border-top: 3px solid #2778b9;
+  box-shadow: 1px 1px 5px #00000042;
+  background: rgb(47 161 255 / 5%);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.4px);
+  -webkit-backdrop-filter: blur(3.4px);
+}
+
+.services:nth-child(2) {
+  background: #0cae5511;
+  border-top: 3px solid #0cae56;
+}
+.services:nth-child(3) {
+  background: #c87d9f17;
+  border-top: 3px solid #c87d9f;
+}
+.services:nth-child(4) {
+  background: rgb(248 176 29 / 8%);
+  border-top: 3px solid #f8b01d;
+}
+
+.imgServices {
+  float: left;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.imgServices img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services>p {
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 845px) {
+  .serviceH1 {
+    top: 25%;
+  }
+}
