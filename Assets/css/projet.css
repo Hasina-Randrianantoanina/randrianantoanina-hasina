@@ -19,6 +19,7 @@
   display: flex;
   width: 75%;
   margin: 50px auto;
+  align-items: center;
 }
 
 .imgProject {
@@ -30,6 +31,12 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.imgQPUC {
+  width: 50% !important;
+  height: auto !important;
+  object-fit: contain;
 }
 
 .detailsProject {
